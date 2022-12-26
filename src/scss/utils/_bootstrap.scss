@@ -23,7 +23,7 @@
 // Option 2
 //
 // Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
-
+/* purgecss start ignore */
 @import "variables";
 
 // Required
@@ -37,6 +37,7 @@
 @import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";
+/* purgecss end ignore */
 
 @import "~bootstrap/scss/type";
 // @import "~bootstrap/scss/images";
@@ -45,7 +46,6 @@
 // @import "~bootstrap/scss/tables";
 @import "~bootstrap/scss/forms";
 @import "~bootstrap/scss/buttons";
-@import "~bootstrap/scss/transitions";
 // @import "~bootstrap/scss/dropdown";
 // @import "~bootstrap/scss/button-group";
 // @import "~bootstrap/scss/nav";
@@ -60,7 +60,6 @@
 // @import "~bootstrap/scss/list-group";
 @import "~bootstrap/scss/close";
 // @import "~bootstrap/scss/toasts";
-@import "~bootstrap/scss/modal"; // Requires transitions
 // @import "~bootstrap/scss/tooltip";
 // @import "~bootstrap/scss/popover";
 // @import "~bootstrap/scss/carousel";
@@ -68,9 +67,14 @@
 // @import "~bootstrap/scss/offcanvas"; // Requires transitions
 // @import "~bootstrap/scss/placeholders";
 
+/* purgecss start ignore */
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/modal"; // Requires transitions
+
 // Helpers
 // @import "helpers";
 
 // Utilities
 @import "~bootstrap/scss/utilities/api";
 
+/* purgecss end ignore */
