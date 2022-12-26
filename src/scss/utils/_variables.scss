@@ -3,6 +3,8 @@
 // Toggle global options
 $enable-shadows: true;
 
+$blue: #1565D8;
+
 // Customize some defaults
 $body-color: #333;
 $body-bg: #fff;
@@ -25,3 +27,10 @@ $modal-footer-padding-y: $modal-header-padding-y;
 $modal-footer-padding-x: $modal-inner-padding-x;
 
 $modal-md: 490px;
+
+// Buttons
+$btn-padding-y-lg: 14px;
+$btn-padding-x-lg: 20px;
+$btn-font-size-lg: 1.125rem; // 18px
+$btn-border-radius-lg: 8px;
+$btn-font-weight: 700;
