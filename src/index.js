@@ -1,6 +1,7 @@
 import { createRoot } from 'react-dom/client'
 import { App } from './App'
 
+import { Modal } from 'bootstrap'
 import './scss/styles.scss'
 
 const container = document.getElementById("app")
