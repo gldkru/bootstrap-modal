@@ -1,5 +1,10 @@
+import Container from './components/Container'
 import Header from './components/Header'
 
 export function App() {
-  return <Header></Header>
+  return (
+    <Container>
+      <Header></Header>
+    </Container>
+  )
 }
